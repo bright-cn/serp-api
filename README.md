@@ -35,7 +35,7 @@
 - [支持与资源](#支持与资源)
 
 ## 免费 SERP 抓取工具
-[免费抓取工具](https://github.com/luminati-io/serp-api/tree/main/free_serp_scraper) 可用于小规模的 Google SERP 数据收集。
+[免费抓取工具](https://github.com/bright-cn/serp-api/tree/main/free_serp_scraper) 可用于小规模的 Google SERP 数据收集。
 
 <img width="700" alt="google-search" src="https://github.com/luminati-io/serp-api/blob/main/Images/bright%20data%20products%20serp.png" />
 
