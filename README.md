@@ -131,7 +131,7 @@ with open("serp_direct_api.json", "w") as file:
 print("Response saved to 'serp_direct_api.json'.")
 ```
 
-👉 查看 [完整 JSON 输出](https://github.com/luminati-io/SERP-API/blob/main/serp_api_outputs/serp_direct_api.json)
+👉 查看 [完整 JSON 输出](https://github.com/bright-cn/SERP-API/blob/main/serp_api_outputs/serp_direct_api.json)
 
 **注意**: 使用 `brd_json=1` 可获取解析后的 JSON，或使用 `brd_json=html` 可获取解析后的 JSON 与完整嵌套 HTML。
 
@@ -173,7 +173,7 @@ with open("serp_native_proxy.html", "w", encoding="utf-8") as file:
 print("Response saved to 'serp_native_proxy.html'.")
 ```
 
-👉 查看 [完整 HTML 输出](https://github.com/luminati-io/SERP-API/blob/main/serp_api_outputs/serp_native_proxy.html)
+👉 查看 [完整 HTML 输出](https://github.com/bright-cn/SERP-API/blob/main/serp_api_outputs/serp_native_proxy.html)
 
 **SSL 证书**：在生产环境中加载 Bright Data 的 SSL 证书。详情参见：[SSL 证书指南](https://docs.brightdata.com/general/account/ssl-certificate)
 
