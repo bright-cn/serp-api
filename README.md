@@ -1,6 +1,6 @@
 # SERP API
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://www.bright.cn/products/serp-api)
+[![Promo](https://github.com/bright-cn/Google-News-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner%20CN.png)](https://www.bright.cn/products/serp-api)
 
 本仓库提供了两种获取搜索引擎结果页 (SERP) 数据的方法：  
 1. 适用于基础数据收集的免费小规模 Google 抓取工具  
@@ -188,7 +188,7 @@ SERP API 支持多种 Google 服务，包括 [**Search**](https://www.bright.cn/
 #### 1. Google Search
 可通过本地化、搜索类型、分页、地理位置及设备定向等参数定制搜索结果。
 
-**本地化 (Localization)**  
+**本地化**  
 - `gl`：搜索所在地的国家代码（如 `gl=us`）  
 - `hl`：搜索结果语言代码（如 `hl=en`）  
 
@@ -199,7 +199,7 @@ curl \
   "https://www.google.com/search?q=pizza&gl=us&hl=en"
 ```
 
-**搜索类型 (Search Type)：**  
+**搜索类型：**  
 使用 `tbm` 参数指定搜索类型：  
 - 图片：`tbm=isch`  
 - 购物：`tbm=shop`  
@@ -213,7 +213,7 @@ curl \
   "https://www.google.com/search?q=pizza&tbm=shop"
 ```
 
-**分页 (Pagination)：**  
+**分页：**  
 - `start`：结果的偏移量（第一页为 0，第二页为 20，依此类推）  
 - `num`：每页显示的结果数（默认 20）  
 
@@ -224,7 +224,7 @@ curl \
   "https://www.google.com/search?q=pizza&start=20&num=50"
 ```
 
-**地理位置 (Geolocation)：**  
+**地理位置：**  
 - `uule`：用于生成地理定位结果的编码位置字符串
 
 ```bash
@@ -234,7 +234,7 @@ curl \
   "https://www.google.com/search?q=pizza&uule=w+CAIQICINVW5pdGVkK1N0YXRlcw"
 ```
 
-**设备定向 (Device Targeting)：**  
+**设备定向：**  
 使用 `brd_mobile` 参数：  
 - `0`：桌面端（默认）  
 - `1`：随机移动端  
@@ -250,7 +250,7 @@ curl \
 #### 2. Google Maps
 通过指定坐标或住宿类型来定制 Google Maps 查询。
 
-**坐标 (Coordinates)：**  
+**坐标：**  
 - 格式：`@latitude,longitude,zoom`，`zoom` 从 `3z` 到 `21z` 不等。
 
 ```bash
@@ -260,7 +260,7 @@ curl \
   "https://www.google.com/maps/search/restaurants/@47.30227,1.67458,14.00z"
 ```
 
-**住宿搜索 (Accommodation Search)：**  
+**住宿搜索：**  
 - `brd_accomodation_type`：  
   - `hotels`（默认）  
   - `vacation_rentals`  
@@ -279,7 +279,7 @@ curl \
 - `brd_json=1`：返回结构化的 JSON 结果  
 - `brd_trends`：指定要获取的小部件如 `timeseries,geo_map`  
 
-**时间范围 (Time Range)：**  
+**时间范围：**  
 - `date`：指定时间范围（如 `now 1-d` 表示过去 1 天）  
 
 ```bash
@@ -344,7 +344,7 @@ curl \
 ### Bing
 可通过本地化、地理定位、分页、设备/浏览器定向及输出格式等参数来配置 Bing 查询。更多信息请参见 [Bing API 专页](https://brightdata.com/products/serp-api/bing-search)。
 
-**本地化 (Localization)**  
+**本地化**  
 - `setLang`：界面使用的语言（如 `setLang=en-US`）。  
 
 ```bash
@@ -354,7 +354,7 @@ curl \
   "https://www.bing.com/search?q=pizza&setLang=en-US"
 ```
 
-**地理定位 (Geo-Location)**  
+**地理定位**  
 - `location`：搜索地（如 `location=New+York`）  
 - `cc`：国家代码（如 `cc=us`）  
 - `mkt`：市场代码（如 `mkt=en-US`）  
@@ -366,7 +366,7 @@ curl \
   "https://www.bing.com/search?q=pizza&location=New+York&cc=us&mkt=en-US"
 ```
 
-**分页 (Pagination)**  
+**分页**  
 - `count`：结果数量（如 `count=50`）  
 - `first`：分页偏移量（如 `first=11` 表示第二页）  
 
@@ -377,7 +377,7 @@ curl \
   "https://www.bing.com/search?q=pizza&count=50&first=11"
 ```
 
-**过滤 (Filters)**  
+**过滤**  
 - `safesearch`：成人内容过滤（如 `safesearch=off`）  
 
 ```bash
@@ -387,7 +387,7 @@ curl \
   "https://www.bing.com/search?q=pizza&safesearch=off"
 ```
 
-**设备定向 (Device Targeting)**  
+**设备定向**  
 - `brd_mobile`：指定设备类型（如 `brd_mobile=1` 表示移动端，或 `brd_mobile=ios`）。  
 
 ```bash
@@ -397,7 +397,7 @@ curl \
   "https://www.bing.com/search?q=pizza&brd_mobile=1"
 ```
 
-**浏览器定向 (Browser Targeting)**  
+**浏览器定向**  
 - `brd_browser`：指定浏览器（如 `brd_browser=chrome`）。  
 
 ```bash
@@ -407,7 +407,7 @@ curl \
   "https://www.bing.com/search?q=pizza&brd_browser=chrome"
 ```
 
-**解析 (Parsing)**  
+**解析**  
 - `brd_json`：返回解析后的 JSON（如 `brd_json=1`）。  
 
 ```bash
@@ -420,7 +420,7 @@ curl \
 ### Yandex
 可针对 Yandex 进行简单的参数配置，如本地化、分页、时间范围、设备/浏览器定向。更多信息请参见 [Yandex API 专页](https://brightdata.com/products/serp-api/yandex-search)。
 
-**本地化 (Localization)**  
+**本地化**  
 - `lr`：指定地区（如 `lr=84` 表示美国）  
 - `lang`：页面语言（如 `lang=en`）  
 
@@ -431,7 +431,7 @@ curl \
   "https://www.yandex.com/search/?text=pizza&lr=84&lang=en"
 ```
 
-**分页 (Pagination)**  
+**分页**  
 - `p`：结果页数（如 `p=2` 表示第二页）  
 
 ```bash
@@ -441,7 +441,7 @@ curl \
   "https://www.yandex.com/search/?text=pizza&p=2"
 ```
 
-**时间范围 (Time Range)**  
+**时间范围**  
 - `within`：指定时间范围（如 `within=1`）  
 
 ```bash
@@ -451,7 +451,7 @@ curl \
   "https://www.yandex.com/search/?text=pizza&within=1"
 ```
 
-**设备定向 (Device Targeting)**  
+**设备定向**  
 ```bash
 curl \
   --proxy brd.superproxy.io:33335 \
@@ -459,7 +459,7 @@ curl \
   "https://www.yandex.com/search/?text=pizza&brd_mobile=1"
 ```
 
-**浏览器定向 (Browser Targeting)**  
+**浏览器定向**  
 ```bash
 curl \
   --proxy brd.superproxy.io:33335 \
@@ -470,7 +470,7 @@ curl \
 ### DuckDuckGo
 简要介绍对 DuckDuckGo 搜索进行本地化、安全搜索、时间范围及设备/浏览器定向的自定义。更多详情参考 [DuckDuckGo API 专页](https://brightdata.com/products/serp-api/duckduckgo-search)。
 
-**本地化 (Localization)**  
+**本地化**  
 - `kl`：国家和语言（如 `kl=us-en`）  
 - `kad`：界面语言配置  
 
@@ -481,7 +481,7 @@ curl \
   "https://duckduckgo.com/?q=pizza&kl=us-en"
 ```
 
-**安全搜索 (Safe Search)**  
+**安全搜索**  
 - `kp`：启用安全搜索（如 `kp=1`）  
 
 ```bash
@@ -491,7 +491,7 @@ curl \
   "https://duckduckgo.com/?q=pizza&kp=1"
 ```
 
-**时间范围 (Time Range)**  
+**时间范围**  
 - `df`：指定时间范围（如 `df=d`）  
 
 ```bash
@@ -501,7 +501,7 @@ curl \
   "https://duckduckgo.com/?q=pizza&df=d"
 ```
 
-**设备定向 (Device Targeting)**  
+**设备定向**  
 - `brd_mobile`：移动端模拟  
 
 ```bash
@@ -511,7 +511,7 @@ curl \
   "https://duckduckgo.com/?q=pizza&brd_mobile=1"
 ```
 
-**浏览器定向 (Browser Targeting)**  
+**浏览器定向**  
 - `brd_browser`：指定浏览器（如 `chrome`）。  
 
 ```bash
