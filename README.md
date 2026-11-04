@@ -185,7 +185,7 @@ Bright Data 搜索引擎 API 允许你使用本地化、分页、设备模拟等
 > 如需查看所有查询参数的完整列表和详细说明，请参阅[详细查询参数文档](https://docs.brightdata.com/scraping-automation/serp-api/query-parameters)。
 
 ### Google
-搜索引擎 API 支持多种 Google 服务，包括 [**搜索**](https://www.bright.cn/products/serp-api/google-search)、[**地图**](https://brightdata.com/products/serp-api/google-search/maps)、[**趋势**](https://www.bright.cn/products/serp-api/google-search/trends)、[**评论**](https://www.bright.cn/products/serp-api/google-search/reviews)、**Lens**、[**酒店**](https://brightdata.com/products/serp-api/google-search/hotels)和[**航班**](https://www.bright.cn/products/web-scraper/google-flights)。以下是各项服务的主要配置参数：
+搜索引擎 API 支持多种 Google 服务，包括 [**搜索**](https://www.bright.cn/products/serp-api/google-search)、[**地图**](https://www.bright.cn/products/web-scraper/google-maps)、[**趋势**](https://www.bright.cn/products/serp-api/google-search/trends)、[**评论**](https://www.bright.cn/products/serp-api/google-search/reviews)、**Lens**、[**酒店**](https://www.bright.cn/products/web-scraper/google-hotels)和[**航班**](https://www.bright.cn/products/web-scraper/google-flights)。以下是各项服务的主要配置参数：
 
 #### 1. Google 搜索
 使用本地化、搜索类型、分页、地理位置和设备定向选项自定义搜索结果。
